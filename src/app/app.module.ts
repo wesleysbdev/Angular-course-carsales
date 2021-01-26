@@ -4,11 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardModule } from 'primeng/card';
 import { LoginComponent } from './views/login/login.component';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
+import { PrimengModule } from './resources/primeng/primeng/primeng.module';
 
 
 @NgModule({
@@ -19,12 +17,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
     AppRoutingModule,
-    CardModule,
-    InputTextModule,
-    ButtonModule
+    HttpClientModule,
+    FormsModule,
+    PrimengModule
   ],
   providers: [],
   bootstrap: [AppComponent]
