@@ -13,6 +13,6 @@ export class AuthService {
   }
 
   public isAuthenticated(): boolean {
-    return Boolean(this.loginResponse?.jwt)
+    return Boolean(this.loginResponse?.jwt);
   }
 }

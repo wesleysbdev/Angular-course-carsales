@@ -19,7 +19,6 @@ export class AlertService {
   public error(message: string, title?: string): void {
     this.showAlert(title, message, 'error');
   }
-  
 
   private showAlert(
     title: string,

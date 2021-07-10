@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { PrimengModule } from './resources/primeng/primeng/primeng.module';
+import { PrimengModule } from './resources/primeng/primeng.module';
 
 
 @NgModule({

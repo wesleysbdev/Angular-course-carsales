@@ -1,0 +1,21 @@
+.list-items-menu {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.item-menu {
+    padding: .5em 1em .2em 1em;
+    margin: 0em .5em;
+    transition: 0.3s;
+}
+
+.item-menu:hover {
+    background-color: #0f4e61;
+    color: #fff;
+    cursor: pointer;
+}

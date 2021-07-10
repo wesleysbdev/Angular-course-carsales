@@ -19,5 +19,7 @@ export class LoginService {
         tap((loginResponse) => this.authService.loginResponse = loginResponse));
   }
 
-
+  public doLogout(): void {
+    this.authService.clear();
+  }
 }

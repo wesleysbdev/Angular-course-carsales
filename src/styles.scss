@@ -1,19 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
-$background-color: #252525 !important;
-$font-color: #fff !important;
+$primary-color: #252525 !important;
+$secondary-color: #fff !important;
+$tertiary-color: #0f4e61 !important;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
 
 body {
-    background-image: url("./assets/background-car.jpg");
+    background-image: url('assets/background.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    opacity: 0.95;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .p-card {
-    background-color: $background-color;
-    color: $font-color;
+    background-color: $primary-color;
+    color: $secondary-color;
 }
 
 .text-center {
