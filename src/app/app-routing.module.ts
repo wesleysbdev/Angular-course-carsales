@@ -6,10 +6,10 @@ import { LoginComponent } from './views/login/login.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   {
-    path: 'dashboard',
+    path: 'home',
     canActivate: [AuthGuardService],
-    loadChildren: () => import('./views/dashboard/dashboard.module').then(
-      (m) => m.DashboardModule
+    loadChildren: () => import('./views/main/main.module').then(
+      (m) => m.MainModule
     ),
   },
   { path: '**', redirectTo: '' },

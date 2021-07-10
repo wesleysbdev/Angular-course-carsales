@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   public doLogin(): void {
     this.loginService.doLogin(this.requestLogin).subscribe(
       (data) => {
-        this.router.navigate(['dashboard']);
+        this.router.navigate(['home']);
       },
       (httpError) => {
         this.alertService.error(httpError.error.message);

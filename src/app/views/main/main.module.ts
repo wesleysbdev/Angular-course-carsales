@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrimengModule } from 'src/app/resources/primeng/primeng.module';
-import { DashboardRoutingModule } from './dashboard-routing.module';
-import { DashboardComponent } from './dashboard.component';
+import { MainRoutingModule } from './main-routing.module';
+import { MainComponent } from './main.component';
 import { MenuHeaderService } from 'src/app/resources/services/menu-header.service';
 import { HeaderComponent } from '../header/header.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent,
+    MainComponent,
     HeaderComponent
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule,
+    MainRoutingModule,
     PrimengModule
   ],
   providers: [
     MenuHeaderService
   ]
 })
-export class DashboardModule { }
+export class MainModule { }
