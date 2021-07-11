@@ -17,7 +17,9 @@ export class HeaderComponent implements OnInit {
   }
 
   public doLogout(): void {
-    this.loginService.doLogout();
-    this.router.navigate(['']);
+    this.alertService.confirm('Deseja encerrar a sessão?', 'Sair', () => {
+      this.loginService.doLogout();
+      this.router.navigate(['']);
+    });
   }
 }

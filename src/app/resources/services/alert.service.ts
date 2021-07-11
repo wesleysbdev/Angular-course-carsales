@@ -20,6 +20,26 @@ export class AlertService {
     this.showAlert(title, message, 'error');
   }
 
+  public confirm(text: string, title?: string, acceptFunction?: () => void, rejectFunction?: () => void): void {
+    Swal.fire({
+      title,
+      text,
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#0f4e61',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sim',
+      cancelButtonText: 'Não'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        acceptFunction();
+      }
+      if (result.isDismissed && rejectFunction !== undefined) {
+        rejectFunction();
+      }
+    });
+  }
+
   private showAlert(
     title: string,
     message: string,
@@ -27,4 +47,5 @@ export class AlertService {
   ): void {
     Swal.fire(title, message, icon);
   }
+
 }
