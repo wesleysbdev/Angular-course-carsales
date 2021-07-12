@@ -1,6 +1,7 @@
 <div class="p-grid p-justify-center">
     <div class="p-col-12 list-items-menu">
-        <div class="item-menu" *ngFor="let menu of menuHeader.createMenu()">
+        <div class="item-menu" *ngFor="let menu of menuHeader.createMenu()"
+            (click)="menuHeader.changeRouter(menu?.getRota())">
             <div class="text-center">
                 <i class="{{menu?.getIcon()}}"></i>
             </div>
